@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VC Calculator - The Vigil Framework</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">THE VIGIL</a>
+            <button class="mobile-menu-toggle">☰</button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="beach.html">Beach Theory</a></li>
+                <li><a href="vics.html">VICS Scale</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="toolkit.html">Toolkit</a></li>
+                <li><a href="visuals.html">Calculator</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Calculate Your VC</h1>
+                <p class="section-intro">Move the sliders to see your current consciousness capacity</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="calculator-container">
+                    <div class="input-group">
+                        <label>Suppression (G₁): How numb/disconnected are you?</label>
+                        <input type="range" id="g1-slider" min="0" max="100" value="75">
+                        <span id="g1-value">75%</span>
+                        <p class="help-text">0 = Fully feeling | 100 = Completely numb</p>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label>Resistance (R): How much are you fighting reality?</label>
+                        <input type="range" id="r-slider" min="0" max="100" value="40">
+                        <span id="r-value">40%</span>
+                        <p class="help-text">0 = Total acceptance | 100 = Fighting everything</p>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label>Avoidance (A): What are you dodging?</label>
+                        <input type="range" id="a-slider" min="0" max="100" value="30">
+                        <span id="a-value">30%</span>
+                        <p class="help-text">0 = Facing everything | 100 = Avoiding everything</p>
+                    </div>
+                    
+                    <div class="result-box">
+                        <h3>Your Current VC:</h3>
+                        <div class="vc-number" id="vc-result">26</div>
+                        <div class="vc-bar-container">
+                            <div class="vc-bar" id="vc-bar"></div>
+                        </div>
+                        <p class="vc-interpretation" id="vc-interpretation">
+                            Below humanity average (31). High suppression. Need: CARE protocol, journaling, support.
+                        </p>
+                    </div>
+                    
+                    <div class="formula-display">
+                        <p><strong>The Math:</strong></p>
+                        <code>VC = 125 × (1 - G₁/100) × (1 - R/100) × (1 - A/100)</code>
+                    </div>
+                </div>
+
+                <div class="what-to-do">
+                    <h2>What To Do With Your Score</h2>
+                    
+                    <div class="score-actions">
+                        <div class="action-box">
+                            <h3>If VC < 20:</h3>
+                            <p><strong>CRISIS - Immediate Action Needed</strong></p>
+                            <ul>
+                                <li>Use CARE protocol now</li>
+                                <li>Call 988 if suicidal</li>
+                                <li>Reach out to someone today</li>
+                                <li>Do NOT isolate</li>
+                            </ul>
+                            <a href="toolkit.html#care" class="btn-primary">CARE Protocol →</a>
+                        </div>
+
+                        <div class="action-box">
+                            <h3>If VC 20-40:</h3>
+                            <p><strong>High Dysfunction - Start Integration</strong></p>
+                            <ul>
+                                <li>Daily journaling (emotionally honest)</li>
+                                <li>Find therapist (trauma-informed if possible)</li>
+                                <li>Body awareness practices</li>
+                                <li>Track VC weekly</li>
+                            </ul>
+                            <a href="toolkit.html" class="btn-primary">Integration Toolkit →</a>
+                        </div>
+
+                        <div class="action-box">
+                            <h3>If VC 40-60:</h3>
+                            <p><strong>Progress Zone - Keep Going</strong></p>
+                            <ul>
+                                <li>Maintain journaling/therapy</li>
+                                <li>Deepen shadow work</li>
+                                <li>Consider medicine work (if appropriate)</li>
+                                <li>Help others starting out</li>
+                            </ul>
+                        </div>
+
+                        <div class="action-box">
+                            <h3>If VC 60+:</h3>
+                            <p><strong>Integration Zone - Maintain & Teach</strong></p>
+                            <ul>
+                                <li>Continue daily practices</li>
+                                <li>Refine integration</li>
+                                <li>Share what you've learned</li>
+                                <li>Be example for others</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="track-progress">
+                    <h2>Track Your Progress</h2>
+                    <p>Calculate your VC weekly. Watch it rise as you do the work.</p>
+                    <p><strong>Expected timeline with consistent work:</strong></p>
+                    <ul>
+                        <li>Month 1-2: +5-10 points (cement softening)</li>
+                        <li>Month 3-6: +10-20 points (major breakthroughs)</li>
+                        <li>Month 6-12: +15-30 points (approaching functional)</li>
+                        <li>Year 2-3: Reaching 60-80 range (integration deepening)</li>
+                    </ul>
+                    <p class="timeline-note">This isn't fast. But it's real. Track it. You'll see.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+    <div class="container">
+        <div class="footer-message">
+            <p class="footer-emphasis">This framework is free. Always will be.</p>
+            <p>If it helps you, consider supporting its distribution so it can reach others at VC = 15 before it's too late.</p>
+        </div>
+        
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Discord: The_vigil</p>
+                <p>YouTube: @TheVigil-0101</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Support This Work</h4>
+                <p>ETH • BTC • SOL • XRP • DOGE</p>
+                <a href="about.html#crypto" class="footer-link">Crypto Addresses →</a>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Verify Everything</h4>
+                <p>Test the formula. Check the data.</p>
+                <a href="visuals.html" class="footer-link">Calculate Your VC →</a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2025 The Vigil | <a href="about.html">About</a> | <a href="acknowledgments.html">Acknowledgments</a></p>
+        </div>
+    </div>
+</footer>
